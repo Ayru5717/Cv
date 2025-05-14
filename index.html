@@ -7,50 +7,56 @@
     <title>Profile Page</title>
     <style>
         body {
-            background-color: #D5D5D5;
+            background-color: #F4F4F4;
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
         }
 
         .container {
-            background-color: #E9E7EA;
-            max-width: 1000px;
+            background-color: #FFFFFF;
+            max-width: 900px;
             margin: auto;
             padding: 30px;
-            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
-            display: grid;
-            grid-template-columns: 35% 65%;
-            gap: 20px;
+            box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #E0E0E0;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
         }
 
         .avatar {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 150px;
-            width: 150px;
+            height: 120px;
+            width: 120px;
             background-color: #ccc;
             border-radius: 50%;
-            margin: auto;
+            margin-right: 20px;
         }
 
         .name {
-            padding-left: 20px;
-            border-left: 2px solid #000;
+            flex-grow: 1;
         }
 
         .name h1 {
             font-weight: 300;
             font-size: 2.5em;
-            margin: 0 0 10px;
+            margin: 0;
+            color: #333;
         }
 
         .name .specialize {
             margin: 0;
             font-weight: bold;
             font-size: 1.2em;
-            letter-spacing: 1px;
+            color: #555;
         }
 
         .contact {
@@ -63,6 +69,7 @@
             padding: 5px 0;
             display: flex;
             align-items: center;
+            color: #777;
         }
 
         .contact span {
@@ -70,75 +77,68 @@
             font-size: 1.2em;
         }
 
-        .intro, .education, .summary, .languages {
-            padding-left: 20px;
-            border-left: 2px solid #000;
-            text-align: justify;
-        }
-
-        .intro h2, .education h2, .summary h2, .languages h2, .experience h2, .skills h2 {
+        h2 {
             margin-top: 20px;
             color: #333;
+            border-bottom: 1px solid #E0E0E0;
+            padding-bottom: 5px;
         }
 
-        .experience, .skills {
-            text-align: right;
+        p, li {
+            line-height: 1.6;
+            color: #555;
         }
 
         ul {
-            padding: 0;
+            padding-left: 20px;
             margin: 10px 0;
-            list-style: none;
+            list-style-type: disc;
         }
 
-        li {
-            padding: 5px 0;
-            line-height: 1.6;
-        }
-
-        h4 {
-            margin: 10px 0;
-            font-weight: normal;
+        .section {
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="avatar">
-            <!-- Placeholder for avatar -->
-            <span style="font-size: 3em;">👤</span>
-        </div>
-        <div class="name">
-            <h1>Manahel</h1>
-            <p class="specialize">Computer Science</p>
-            <ul class="contact">
-                <li><span>📞</span>Phone: 0532891912</li>
-                <li><span>✉️</span>Email: Justnonyy@gmail.com</li>
-            </ul>
+        <div class="header">
+            <div class="avatar">
+                <!-- Placeholder for avatar -->
+                <span style="font-size: 3em;">👤</span>
+            </div>
+            <div class="name">
+                <h1>Manahel</h1>
+                <p class="specialize">Computer Science</p>
+                <ul class="contact">
+                    <li><span>📞</span>Phone: 0532891912</li>
+                    <li><span>✉️</span>Email: Justnonyy@gmail.com</li>
+                </ul>
+            </div>
         </div>
 
-        <div class="intro">
+        <div class="section intro">
             <h2>Introduction</h2>
             <p>
                 Welcome to my profile! I am a dedicated professional with a passion for [Your Specialization]. Over the years, I have honed my skills and gained valuable experience in various aspects of my field. I thrive on challenges and enjoy collaborating with teams to drive innovative solutions. My goal is to continuously learn and grow, while making meaningful contributions to every project I undertake. Thank you for taking the time to learn more about me.
             </p>
         </div>
 
-        <div class="education">
+        <div class="section education">
             <h2>Education</h2>
             <p>Computer Science from Shaqra University</p>
         </div>
 
-        <div class="summary">
+        <div class="section summary">
             <h2>Summary</h2>
             <p>I am a results-driven professional with expertise in data analysis, web design, and mobile application development. My strong analytical skills and commitment to excellence enable me to deliver high-quality results.</p>
         </div>
 
-        <div class="languages">
+        <div class="section languages">
             <h2>Languages</h2>
-            <p>English, French,Arabic</p>
+            <p>English, French</p>
         </div>
-        <div class="experience">
+        <div class="section experience">
             <h2>Experience</h2>
             <h4>Data Analyst - Company Alnajm</h4>
             <ul>
@@ -150,7 +150,7 @@
             </ul>
         </div>
 
-        <div class="skills">
+        <div class="section skills">
             <h2>Skills</h2>
             <ul>
                 <li>Web Design</li>
