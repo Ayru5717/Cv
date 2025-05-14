@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            background-color: #D5D5D5;
+            font-family: system-ui;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #E9E7EA;
+            width: 1000px;
+            max-width: 100%;
+            margin: auto;
+            padding: 50px;
+            box-shadow: 0 10px 50px #858585;
+            display: grid;
+            grid-template-columns: 35% 60%;
+            column-gap: 5%;
+            row-gap: 30px;
+        }
+
+        .avatar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .avatar img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .name {
+            padding-left: 30px;
+            border-left: 1px solid #000;
+        }
+
+        .name h1 {
+            font-weight: 300;
+            font-size: xxx-large;
+            margin: 0 0 5px;
+        }
+
+        .name .specialize {
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .name .contact {
+            padding: 0;
+            list-style: none;
+        }
+
+        .name .contact span {
+            display: inline-block;
+            background-color: #000;
+            width: 20px;
+            height: 20px;
+            color: #fff;
+            text-align: center;
+            border-radius: 50%;
+            font-size: small;
+            margin-right: 20px;
+        }
+
+        .name .contact li {
+            padding: 5px 0;
+            transform: translate(-40px);
+            background-color: #E9E7EA;
+        }
+
+        .intro ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: right;
+            line-height: 30px;
+        }
+
+        h2 {
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
+
+        .intro {
+            padding-left: 30px;
+            border-left: 1px solid #000;
+            text-align: justify;
+        }
+
+        .experience {
+            text-align: right;
+        }
+
+        .experience h4 {
+            margin: 20px 0 10px;
+        }
+
+        .skills {
+            margin-top: 50px;
+        }
+
+        .experience ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .experience li {
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="avatar">
+            <img src="your-avatar-url.jpg" alt="Your Avatar"> <!-- Replace with your image URL -->
+        </div>
+        <div class="name">
+            <h1>Your Name Here</h1>
+            <p class="specialize">Your Specialization</p>
+            <ul class="contact">
+                <li><span>📞</span>Phone: 123456789</li>
+                <li><span>✉️</span>Email: example@example.com</li>
+            </ul>
+        </div>
+
+        <div class="intro">
+            <h2>Introduction</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur amet sed, est eum facilis repellendus 
+                atque perspiciatis iste porro nobis autem explicabo expedita fugiat nostrum. Eveniet eum autem culpa!
+            </p>
+        </div>
+
+        <div class="experience">
+            <h2>Experience</h2>
+            <h4>Data Analyst - Company XYZ</h4>
+            <ul>
+                <li>I gathered and examined data from a variety of sources to boost the company's overall success.</li>
+                <li>I put together comprehensive reports on a regular basis, covering sales and marketing results, which helped management make key strategic choices.</li>
+                <li>I worked closely with the marketing and sales teams to spot emerging trends and refine our strategies.</li>
+                <li>I used tools like Excel and Tableau for my data analysis work, uncovering valuable insights along the way.</li>
+                <li>By analyzing data and offering thoughtful recommendations, I contributed to a 20% improvement in internal processes.</li>
+            </ul>
+        </div>
+
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Skill 1</li>
+                <li>Skill 2</li>
+                <li>Skill 3</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
